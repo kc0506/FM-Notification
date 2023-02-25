@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+@font-face {
+  font-family: "my font";
+  src: url("@/assets/PlusJakartaSans-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "my font";
+  src: url("@/assets/PlusJakartaSans-Medium.ttf");
+  font-weight: 500;
+}
+
+body {
+  font-family: "my font";
+  font-weight: 500;
+  font-size: 16px;
+}
