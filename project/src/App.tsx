@@ -4,43 +4,7 @@ import { CardProps } from "./components/Card";
 import { ContentProps } from "./components/Content";
 import Header from "./components/Header";
 
-
-const db: CardProps[] = [
-	{
-		img: './images/avatar-angela-gray.webp',
-		unread: true,
-		time: '5m ago',
-		contents: [
-			{
-				type: 'name',
-				text: 'Angela Gray',
-			},
-			{
-				type: 'default',
-				text: 'followed you',
-			},
-		],
-	},
-	{
-		img: './images/avatar-jacob-thompson.webp',
-		unread: true,
-		time: '1days ago',
-		contents: [
-			{
-				type: 'name',
-				text: 'Jacob Thompson',
-			},
-			{
-				type: 'default',
-				text: 'has joined your group',
-			},
-			{
-				type: 'bold',
-				text: 'Chess Club'
-			},
-		],
-	},
-]
+import { db } from "./db";
 
 export default function App() {
 
@@ -58,7 +22,7 @@ export default function App() {
 
 	return <>
 		<div className="h-screen flex items-center justify-center bg-grayish-blue-100 ">
-			<div style={{ borderRadius: 30 }} className=" shadow-2xl shadow-grayish-blue-300 h-full md:h-5/6 max-w-2xl grow bg-white	flex flex-col">
+			<div style={{ borderRadius: '1rem' }} className="p-4 shadow-2xl shadow-grayish-blue-300 h-full md:h-5/6 max-w-3xl grow bg-white	flex flex-col">
 				<Header markAllAsRead={markAllAsRead} count={count} />
 				<Body cards={cards} />
 			</div>

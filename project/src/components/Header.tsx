@@ -16,7 +16,7 @@ export default function Header(props: HeaderProps) {
             <div className=" rounded-md bg-primary-blue text-grayish-blue-300 px-3 py-0.5 text-base">
                 {count}
             </div>
-            <div className=" ml-auto text-grayish-blue-500 cursor-pointer" onClick={markAllAsRead}>Mark all as read</div>
+            <div className=" ml-auto cursor-pointer hover:text-primary-blue text-grayish-blue-500 cursor-pointer" onClick={markAllAsRead}>Mark all as read</div>
         </div>
     </>
 }

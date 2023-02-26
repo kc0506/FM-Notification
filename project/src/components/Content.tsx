@@ -10,6 +10,7 @@ export default function Content(props: ContentProps) {
     const { text, type } = props;
 
     const weight = type === 'default' ? 'font-medium' : 'font-extrabold';
+    const hover = type === 'default' ?'' :' cursor-pointer hover:text-primary-blue'
 
     let color: string;
     switch (type) {
@@ -23,7 +24,7 @@ export default function Content(props: ContentProps) {
     }
 
     return <>
-        <span className={`${weight} ${color}`}>
+        <span className={`${weight} ${color} ${hover}`}>
             {text + ' '}&nbsp;
         </span>
     </>
